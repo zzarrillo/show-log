@@ -25,29 +25,29 @@
   html{scroll-behavior:smooth}
   body{margin:0;background:var(--bg);color:var(--text);
     font-family:"proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+    font-size:17px;line-height:1.4;-webkit-font-smoothing:antialiased}
   button,[role="button"],select,summary,input:not([type="checkbox"],[type="radio"]){min-height:2.25rem}
   a{color:var(--ink);font-weight:600;text-decoration:none}
   a:hover{text-decoration:underline}
 
   /* ---------- left rail, after zzarrillo.com ---------- */
-  .rail{position:fixed;top:0;left:0;bottom:0;width:250px;padding:65px 20px 40px 52px;
+  .rail{position:fixed;top:0;left:0;bottom:0;width:250px;padding:61px 20px 40px 52px;
     display:flex;flex-direction:column;background:var(--bg);z-index:5}
   /* Logo sized to match zzarrillo.com: the dashed mark itself renders
      140px wide there (measured from the main site at the same capture
      scale as this page's nav type). The asset is trimmed to the mark
      with a 24px margin, so a 148px-wide image yields a ~141px mark. */
-  .zz{display:block;width:148px;height:auto;text-decoration:none;flex:none;line-height:0}
+  .zz{display:block;width:148px;height:auto;text-decoration:none;flex:none;line-height:0;margin-left:-1px}
   .zz:hover{text-decoration:none}
   .zz img{width:100%;height:auto;display:block}
   .rail nav{margin-top:46px}
-  .rail nav a{display:block;padding:7px 0;color:var(--ink);font-size:17px;font-weight:500;line-height:1.35}
+  .rail nav a{display:block;padding:4px 0;color:var(--ink);font-size:17px;font-weight:500;line-height:1.35}
   .rail nav a:hover{text-decoration:underline}
   .rail .home-link{margin-top:auto;padding-top:28px;color:var(--faint);font-size:14.5px;font-weight:400}
   .rail .home-link:hover{color:var(--ink)}
 
   main{margin-left:250px}
-  .inner{max-width:900px;padding:56px 58px 90px}
+  .inner{max-width:900px;padding:56px 58px 90px 50px}
 
   /* ---------- head of page ---------- */
   .pagetitle{color:var(--ink);font-size:21px;font-weight:600;margin:0 0 6px}
@@ -146,7 +146,7 @@
   }
   @media (max-width:860px){
     .rail{position:static;width:auto;padding:28px 22px 4px;flex-direction:row;flex-wrap:wrap;align-items:flex-start;gap:8px 26px}
-    .zz{width:76px;height:auto}
+    .zz{width:76px;height:auto;margin-left:0}
     .rail nav{margin-top:2px;display:flex;flex-wrap:wrap;gap:2px 18px;flex:1 1 220px}
     .rail nav a{padding:8px 0;font-size:16px}
     .rail .home-link{margin:0;padding:8px 0 0;width:100%}
